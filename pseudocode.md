@@ -99,10 +99,20 @@ FUNCTION purl
     b. repeat purl stitches until all 20 are on right hand needle
 
 FUNCTION finishOFF
+    a. check for 20 rows of your stitches so that you have a completed swatch
+        * IF 20 rows are counted
+            THEN
+                FINISH off the final row and continue to next function
+
+FUNCTION takeOffNeedles
+    a. slide newly finished swatch off of needle
 ```
 <!--
-    - so next do a loop to repeat the functions for knitting, turning, and purling functions to create the rows   until the full square swatch is formed
+    - if else to check for 20 stitches each time? or loop until 20 stitches are made
+    - could also insert another function to check if you are on the right or wrong side of your knitting to determine whether to knit or purl if you drop/forget your progress
+    - so next do a loop to repeat the functions for knitting, turning, and purling functions to create the rows     until the full square swatch is formed
     - should those three actions actually be one full function instead to loop?
+    - can insert a final function on how to measure your swatch to test gauge
 -->
 
 ## START/INIT
