@@ -67,9 +67,12 @@ FUNCTION checkMaterials:
             continue to knitting;
         } else if (yarn.recommendedKnittingNeedleSize < knittingNeedleSet.size) {
             REPEAT until....
-
+        } else if (yarn.recommendedKnittingNeedleSize < knittingNeedleSet.size) {
+            REPEAT until....
         }
-}>
+} -->
+
+<!-- matching sizes would return TRUE - if greater than or less than (sizes don't match) would return FALSE -->
 
 ## KNITTING:
 
@@ -78,4 +81,44 @@ FUNCTION castOn:
     a. take yarn and cast on stitches UNTIL there are 20 cast on stitches on one needle
 
 FUNCTION holdKnittingNeedles
-    a. hold the casted on stitches
+    a. hold the needle with the casted on stitches in your LEFT hand
+    b. hold the needle without stitches in RIGHT hand
+    c. place the ball of yarn near you where it won't get tangled by things around it
+
+FUNCTION knit
+    a. create a knit stitch using both needles and slip it to the right hand needle
+    b. repeat knit stitches until all 20 are on right hand needle
+
+\\ maybe for loop to reach 20 stitches inserted here... \\
+
+FUNCTION turn
+    a. turn around (left to right) your work around so now that the needle with the new stitches is now in your LEFT hand and the needle without stitches is in your RIGHT hand
+
+FUNCTION purl
+    a. create a purl stitch using both needles and slip it to the right hand needle
+    b. repeat purl stitches until all 20 are on right hand needle
+
+FUNCTION finishOFF
+```
+<!--
+    - so next do a loop to repeat the functions for knitting, turning, and purling functions to create the rows   until the full square swatch is formed
+    - should those three actions actually be one full function instead to loop?
+-->
+
+## START/INIT
+
+```
+gatherMaterials
+checkMaterials
+
+castOn
+holdKnittingNeedles
+knit
+turn
+purl
+finishOff
+takeOffNeedles
+
+```
+
+## END
