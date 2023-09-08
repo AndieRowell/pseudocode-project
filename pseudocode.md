@@ -26,6 +26,25 @@
     - measuring tape
 <!-- stitch counter? -->
 
+```
+example of a yarn object
+    var yarn = {
+        brand: 'Bernat',
+        type: 'Blanket',
+        color: 'almond',
+        weight: 6,
+        recommendedKnittingNeedleSize: 11,
+\\ these are the properties of the yarn variable \\
+    }
+
+example of knitting needle
+    var knittingNeedleSet {
+        brand: 'knitpicks',
+        type: 'circular',
+        size: 11,
+    }
+```
+
 ## PREPARATION:
 ```
 FUNCTION gatherMaterials:
@@ -40,5 +59,23 @@ FUNCTION checkMaterials:
                 CONTINUE to KNITTING
             ELSE
                 find/buy knitting needles to match the yarn label's recommended needle size
-// this would then lead to a loop //
+
+// this would then lead to a loop until continue to KNITTING//
 ```
+<!-- checkMaterials: function() {
+        if (yarn.recommendedKnittingNeedleSize == knittingNeedleSet.size) {
+            continue to knitting;
+        } else if (yarn.recommendedKnittingNeedleSize < knittingNeedleSet.size) {
+            REPEAT until....
+
+        }
+}>
+
+## KNITTING:
+
+```
+FUNCTION castOn:
+    a. take yarn and cast on stitches UNTIL there are 20 cast on stitches on one needle
+
+FUNCTION holdKnittingNeedles
+    a. hold the casted on stitches
